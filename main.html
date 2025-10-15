@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aeterna Info</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+  }
+
+  .top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 10%;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .top-nav img {
+    height: 24px;
+    margin-right: 15px;
+  }
+  .top-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  .top-nav a.active, .top-nav a:hover {
+    color: #007aff;
+  }
+  .top-nav input[type="text"] {
+    margin-left: auto;
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+  }
+
+  .main-header {
+    display: flex;
+    padding: 120px 10% 60px 10%; 
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #fff, #eee);
+    border-bottom: 1px solid #ccc;
+  }
+  .main-header .text-section h1 {
+    font-size: 56px;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    color: #000;
+  }
+  .main-header .text-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+  }
+  .main-header img {
+    max-width: 320px;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-radius: 6px;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+    background: #fff;
+  }
+  .feature-box {
+    width: 22%;
+    min-width: 200px;
+    margin: 20px 0;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  .feature-box img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  .feature-box h3 {
+    margin: 10px 0 5px 0;
+    font-weight: 400;
+    color: #000;
+  }
+  .feature-box p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .footer {
+    background: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+    padding: 30px 10%;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ccc;
+  }
+  .footer a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-column {
+    width: 20%;
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+  .footer-column h4 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+  <a href="index.html" class="active">Home</a>
+  <a href="versions.html">Versions</a>
+  <a href="atunes.html">aTunes</a>
+  <a href="aeterna.html">Aeterna</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="support.html">Support</a>
+  <input type="text" placeholder="Search">
+</div>
+
+<div class="main-header">
+  <div class="text-section">
+    <h1>AeternaOS<sup>18.01</sup></h1>
+    <p>The fastest Linux Distro.<br>Game, develop, and more — even faster.</p>
+  </div>
+  <div class="image-section">
+    <img src="Preview.jpg" alt="Aeterna Preview">
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature-box">
+    <img src="call.png" alt="MobileMe">
+    <h3>New in MobileMe</h3>
+    <p>MobileMe gives you push email, contacts, and calendar. Lose your iPhone? MobileMe can help you find it and protect your privacy with Find My iPhone.</p>
+  </div>
+  <div class="feature-box">
+    <img src="app.jpg" alt="Apps for Aeterna">
+    <h3>Apps for Aeterna</h3>
+    <p>Discover apps from the App Store that help you do more with Aeterna. From games to business to health and fitness, there’s an app for that.</p>
+  </div>
+  <div class="feature-box">
+    <img src="zorin.png" alt="Software Update">
+    <h3>15.4 Software Update</h3>
+    <p>Make your Aeterna even better with new features including aTunes, Calendar, Clock, and more.</p>
+  </div>
+  <div class="feature-box">
+    <img src="wifi.png" alt="Aeterna for Business">
+    <h3>Aeterna for Business</h3>
+    <p>With Aeterna, you get secure corporate network connectivity, access to thousands of business apps, and tools for developing your own company apps.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h4>Aeterna</h4>
+      <a href="#">Aeterna Guided Tour</a><br>
+      <a href="#">AeternaOS Features</a><br>
+      <a href="#">Apps for Aeterna</a>
+    </div>
+    <div class="footer-column">
+      <h4>Get the most out of Aeterna</h4>
+      <a href="#">Apps for Everything</a><br>
+      <a href="#">Staff picks</a><br>
+      <a href="#">How Tos</a>
+    </div>
+    <div class="footer-column">
+      <h4>Business</h4>
+      <a href="#">Overview</a><br>
+      <a href="#">Features</a><br>
+      <a href="#">Integration</a>
+    </div>
+    <div class="footer-column">
+      <h4>More Aeterna</h4>
+      <a href="#">Compare Versions</a><br>
+      <a href="#">Software Update</a><br>
+      <a href="#">Setup and Sync</a>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <a href="#">How to install Aeterna</a><br>
+      <a href="#">Online Support</a><br>
+      <a href="#">User Guide (PDF)</a>
+    </div>
+  </div>
+  <p style="margin-top:10px;">&copy; 2025 Aeterna Inc. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+</div>
+
+</body>
+</html>
